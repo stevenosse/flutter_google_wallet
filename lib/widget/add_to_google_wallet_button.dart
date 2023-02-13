@@ -47,16 +47,16 @@ enum GoogleWalletButtonType { primary, condensed }
 class AddtoGoogleWalletButton extends StatelessWidget {
   final VoidCallback? onPress;
   final bool badgeButton;
-  final String langue;
+  final String locale;
   final bool removeSvgPackage;
 
-  const AddtoGoogleWalletButton(
-      {Key? key,
-      this.onPress,
-      this.badgeButton = false,
-      required this.langue,
-      bool? removeSvgPackage})
-      : removeSvgPackage = removeSvgPackage ?? false,
+  const AddtoGoogleWalletButton({
+    Key? key,
+    this.onPress,
+    this.badgeButton = false,
+    required this.locale,
+    bool? removeSvgPackage,
+  })  : removeSvgPackage = removeSvgPackage ?? false,
         super(key: key);
 
   @override
