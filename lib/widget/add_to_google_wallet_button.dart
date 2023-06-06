@@ -19,11 +19,8 @@ class AddToGoogleWalletButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final localeOrDefault =
-        locale ?? WidgetsBinding.instance.platformDispatcher.locale;
-    final buttonPrefix = buttonType == GoogleWalletButtonType.primary
-        ? 'wallet-button'
-        : 'add-wallet-badge';
+    final localeOrDefault = locale ?? WidgetsBinding.instance.platformDispatcher.locale;
+    final buttonPrefix = buttonType == GoogleWalletButtonType.primary ? 'wallet-button' : 'add-wallet-badge';
     final assetRoot = useInternalAssetPackage ? 'lib/' : '';
     final path =
         '${assetRoot}assets/svg/button/${localeOrDefault.toAssetPrefix()}_add_to_google_wallet_$buttonPrefix.svg';
@@ -62,10 +59,8 @@ class AddtoGoogleWalletButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) => AddToGoogleWalletButton(
         onPress: onPress,
-        buttonType: badgeButton
-            ? GoogleWalletButtonType.condensed
-            : GoogleWalletButtonType.primary,
-        locale: Locale(langue),
+        buttonType: badgeButton ? GoogleWalletButtonType.condensed : GoogleWalletButtonType.primary,
+        locale: Locale(locale),
         useInternalAssetPackage: removeSvgPackage,
       );
 }
