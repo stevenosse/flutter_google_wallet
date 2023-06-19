@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.1
+
+### Changes
+
+---
+
+- Use kotlin as output language for generated Pigeon bindings
+- Use gradle 7.5
+
 ## 2023-05-23
 
 ### Changes
@@ -11,25 +20,25 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 Packages with breaking changes:
 
- - There are no breaking changes in this release.
+- There are no breaking changes in this release.
 
 Packages with other changes:
 
- - [`flutter_google_wallet` - `v0.1.0`](#flutter_google_wallet---v010)
+- [`flutter_google_wallet` - `v0.1.0`](#flutter_google_wallet---v010)
 
 ---
 
 #### `flutter_google_wallet` - `v0.1.0`
 
- - support Flutter 3.10 / Dart 3.0.0
+- support Flutter 3.10 / Dart 3.0.0
 
- - **BUILD**: support Flutter 3.10 / Dart 3.0.0
+- **BUILD**: support Flutter 3.10 / Dart 3.0.0
 
 ## 0.1.0
 
- - support Flutter 3.10 / Dart 3.0.0
+- support Flutter 3.10 / Dart 3.0.0
 
- - **BUILD**: support Flutter 3.10 / Dart 3.0.0
+- **BUILD**: support Flutter 3.10 / Dart 3.0.0
 
 ## 0.0.11
 
@@ -47,7 +56,7 @@ Packages with other changes:
 
 * Fixed SVG in all supported locales
 * Renamed Add*to*GoogleWalletButton to Add*To*GoogleWalletButton (with a capital T): AddToGoogleWalletButton still exists but is deprecated
-* The `badgeButton` field is now the `buttonType` field, and is now of type `GoogleWalletButtonType` which has 2 possible values: 
+* The `badgeButton` field is now the `buttonType` field, and is now of type `GoogleWalletButtonType` which has 2 possible values:
   * `GoogleWalletButtonType.primary` which is equivalent to `badgeButton = false`
   * `GoogleWalletButtonType.condensed` which is equivalent to `badgeButton = true`
 * The field `removeSvgPackage` has been renamed to `useInternalAssetPackage`
